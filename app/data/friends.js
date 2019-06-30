@@ -19,6 +19,11 @@ const friendArray = [
         "name":"Mario",
         "photo":"https://mario.nintendo.com/assets/img/home/intro/mario-pose2.png",
         "scores":[ 1, 3, 4, 2, 1, 1, 2, 3, 4, 5 ]
+      },
+      {
+        "name":"Pikachu",
+        "photo":"https://splicetoday.imgix.net/uploads/posts/photos/24975/D15670A3-3283-48E6-B8BC-C79038E737D6.jpeg",
+        "scores":[ 1, 1, 2, 2, 1, 2, 1, 2, 1, 2 ]
       }
   ];
   
