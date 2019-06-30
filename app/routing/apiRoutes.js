@@ -8,6 +8,28 @@ module.exports = (app) => {
     });
 
     app.post("/api/friends", (req, res) => {
-    // After user fills out the survey form, the server will route to this post event.
+        // After user fills out the survey form, the server will route to this post event.
+        var newMember = req.body;
+
+        // set bestMatchValue to 99, so at least we got a match.
+        var bestMatchId = -1;
+        var bestMatchValue;
+        for (var i = 0; i < friendData.length; i++) {
+            var diff = 0;
+            for (var j = 0; j < newMember.scores.length; j++) {
+                diff += Math.abs(newMember.scores[j] - friendData[i].scores[j]);
+            }
+            if ((bestMatchId < 0) || (bestMatchValue > diff)) {
+                bestMatchId = i;
+                bestMatchValue = diff;
+            }
+        }
+
+        friendData.push(newMember);
+        if (bestMatchId < 0)
+            res.json({ "name": "No match found!", "photo": "" });
+        else
+            // return best match
+            res.json(friendData[bestMatchId]);
     });
 }
