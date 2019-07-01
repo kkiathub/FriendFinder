@@ -11,7 +11,6 @@ module.exports = (app) => {
         // After user fills out the survey form, the server will route to this post event.
         var newMember = req.body;
 
-        // set bestMatchValue to 99, so at least we got a match.
         var bestMatchId = -1;
         var bestMatchValue;
         for (var i = 0; i < friendData.length; i++) {

@@ -22,8 +22,13 @@ const friendArray = [
       },
       {
         "name":"Pikachu",
-        "photo":"https://splicetoday.imgix.net/uploads/posts/photos/24975/D15670A3-3283-48E6-B8BC-C79038E737D6.jpeg",
+        "photo":"https://s2.r29static.com//bin/entry/3d2/720x864,85/2176441/you-dont-emneedem-to-know-2176441.webp",
         "scores":[ 1, 1, 2, 2, 1, 2, 1, 2, 1, 2 ]
+      },
+      {
+        "name":"Padmé Amidala",
+        "photo":"https://vignette.wikia.nocookie.net/starwars/images/3/30/QueenAmidala1.jpg",
+        "scores":[ 5, 4, 3, 4, 4, 3, 1, 5, 2, 4 ]
       }
   ];
   

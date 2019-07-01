@@ -29,7 +29,6 @@
 
     body {
       background-image: url("https://raw.githubusercontent.com/kkiathub/FriendFinder/master/app/data/friends1.jpg");
-      /* background-image: url("../data/friends1.jpg"); */
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -40,7 +39,7 @@
 
   <div class="container">
 
-    <h2 class="py-3">Survey Questions</h2>
+    <h2 class="py-3 text-center">Survey Questions</h2>
     <hr>
 
     <h3><strong>About You</strong></h3>
@@ -375,7 +374,6 @@
     // this is to make sure the image is properly displayed on modal.
     $("#match-img").load(function () {
       var img = document.getElementById("match-img");
-
       if (img.naturalWidth > img.naturalHeight) {
         $(this).attr("style", "width: 100%;object-fit: cover;");
       } else {
